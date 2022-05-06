@@ -104,6 +104,7 @@ namespace HybridRocksCases.Controllers
         {
             return _HybridContext.Users.Any(u => u.Id == id);
         }
-   
+      
+
     }
 }

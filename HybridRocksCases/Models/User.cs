@@ -17,7 +17,7 @@ namespace HybridRocksCases.Models
         [Column(TypeName = "NVARCHAR(30)")]
         public string Surname { get; set; }
 
-        public List<Order> Orders { get; set; }
+
     }
 
 }

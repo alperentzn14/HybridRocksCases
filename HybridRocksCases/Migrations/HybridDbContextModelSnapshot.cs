@@ -82,13 +82,13 @@ namespace HybridRocksCases.Migrations
             modelBuilder.Entity("HybridRocksCases.Models.Order", b =>
                 {
                     b.HasOne("HybridRocksCases.Models.Product", "Product")
-                        .WithMany("Orders")
+                        .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("HybridRocksCases.Models.User", "User")
-                        .WithMany("Orders")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
